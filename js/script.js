@@ -2464,3 +2464,10 @@
 		
 	});
 }());
+
+
+$(document).ready(function() {
+  setTimeout(function() {
+    $("#enquiryButton").trigger('click');
+  }, 10000);
+});
