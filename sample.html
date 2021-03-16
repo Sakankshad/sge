@@ -165,6 +165,33 @@
   font-family: chawk;
   src : url(fonts/chawp.ttf);
 }
+
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+   width: 100%
+}
+
+.dropdown {
+  position: absolute;
+}
+
     </style>
   </head>
   <body>
@@ -253,7 +280,12 @@
                   <ul class="rd-navbar-nav">
                     <li class="active"><a href="index.html">Home</a>
                     </li>
-                    <li><a href="about.html">About</a>
+                    <li><a href="#" aria-haspopup="true">About<i class="fas fa-angle-down"></i></a>
+                      <ul class="dropdown" aria-label="submenu">
+                        <li><a href="#">Sub-1</a></li>
+                        <li><a href="#">Sub-2</a></li>
+                        <li><a href="#">Sub-3</a></li>
+                      </ul>
                     </li>
                     <li><a href="gallery.html">Gallery</a>
                     </li>
@@ -347,18 +379,11 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-5">
-                <h4 class="heading-decorated" style="color: #19629b">Welcome to SGE</h4>
-                <p>
-                  School of global education is a 21st-century school that cater to global standard education. It is Bihar's first advanced and technology-equipped school with traditional, digital and kinesthetic learning methodologies. Based on the CBSE curriculum, SGE offers multifaceted facilities of academics, digital content, communication and learning labs, indoor and outdoor sports, secured and temperature-controlled campus with trackable security transportation.
-                  <br>
-                  <br>
-                  Far from the bustling urban environs, main campus of School of Global Education is located in Badka Bagicha, Gangajal, off Sonepur-Patna JP Setu. The sylvan and pristine surroundings lend a serene touch to the impressive campus spread over 2.5 acres. A marvel of modern architecture with advanced equipment, the campus contains well-lit airy classrooms, outdoor theatre, performing art block, cafeteria, spacious courtyards for indoor games, an indoor Swimming Pool, and beautifully landscaped lawns. 
-                  <br>
-                  <br>
-                  Adding comprehensive solutions to young minds, the school of global education procures lab facilities like Robotics lab, Maths Lab, Science Lab, English Lab, Computer labs. Also, well-versed Communication in English, Hindi, Sanskrit and Foreign languages like French and German are served.
-                  <br>
-                  <br>
-                  The last three years as a best-emerging school in Patna have been a journey where perseverance and progress have been the cornerstones.
+                <h4 class="heading-decorated" style="color: #19629b">About us</h4>
+                <p>Asha Home sanitation is the best cleaning and sanitation company of Bihar. We are the caregivers and one of the leading names in housekeeping, cleaning, disinfection and sanitation services with more than 30 years of experience. The advanced tools, high quality products and modern techniques applied to give quality of work makes us stand out.
+                <br>
+                <br>
+                We offer more than 25 services of deep cleaning, scrubbing, stain removing, floor cleaning, housekeeping, manpower management etc in different niches in residential and commercial sectors. Our core value is to keep the surroundings clean and maintain hygienic standards in the society with our key services. We are the most trusted brand of cleaning and sanitation services.
                 </p>
               </div>
             </div>
