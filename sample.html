@@ -166,7 +166,7 @@
   src : url(fonts/chawp.ttf);
 }
 
-ul li ul {
+/*ul li ul {
   background: orange;
   visibility: hidden;
   opacity: 0;
@@ -190,6 +190,54 @@ ul li ul:focus {
 
 .dropdown {
   position: absolute;
+}*/
+
+.dropdown {
+  background: transparent;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  padding-top: 42px;
+  left: 0;
+  display: none;
+  z-index: 99;
+  height: 0;
+  transition: height 2s linear 1s;
+}
+
+.dropdown-option:hover + .dropdown, 
+.dropdown-option:focus-within + .dropdown,
+.dropdown:hover, 
+.dropdown:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+.dropdown {
+  position: absolute;
+}
+
+.dropdown a {
+  font-family: CaveatBrush !important;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  color: #1a496a;
+}
+
+.dropdown .row {
+  margin: auto;
+  width: 80%;
+  background: #b8e701;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 25%);
 }
 
     </style>
@@ -280,12 +328,29 @@ ul li ul:focus {
                   <ul class="rd-navbar-nav">
                     <li class="active"><a href="index.html">Home</a>
                     </li>
-                    <li><a href="#" aria-haspopup="true">About<i class="fas fa-angle-down"></i></a>
-                      <ul class="dropdown" aria-label="submenu">
+                    <li><a href="#" class="dropdown-option" aria-haspopup="true">About</a>
+                      <div class="dropdown">
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <a href="">List</a>
+                          </div>
+                          <div class="col-lg-3">
+                            <a href="">List</a>
+                          </div>
+                          <div class="col-lg-3">
+                            <a href="">List</a>
+                          </div>
+                          <div class="col-lg-3">
+                            <a href="">List</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- <ul class="dropdown" aria-label="submenu">
                         <li><a href="#">Sub-1</a></li>
                         <li><a href="#">Sub-2</a></li>
                         <li><a href="#">Sub-3</a></li>
-                      </ul>
+                      </ul> -->
                     </li>
                     <li><a href="gallery.html">Gallery</a>
                     </li>
@@ -1233,6 +1298,19 @@ window.onload = function() {
         });
     }
     </script>
+    <!-- <script type="text/javascript">
+      $('.dropdown-option').hover(function() {
+        $('.dropdown').css('visibility', 'visible', 'opacity', '1', 'display', 'block', 'width', '100%',);
+      }, function() {
+        // on mouseout, reset the background colour
+        $('.dropdown').css('visibility', 'hidden');
+      });
+    </script> -->
     <script type="js/form.js"></script>
   </body>
 </html>
+<!-- 
+visibility: visible;
+   opacity: 1;
+   display: block;
+   width: 100% -->
