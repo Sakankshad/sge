@@ -261,7 +261,7 @@
                     </li>
                     <li class="header-enquiry">
                       <div>
-                        <button class="btn btn-info btn-lg turned-button" id="enquiryButton" type="button" data-toggle="modal" data-target="#myModal">Admission Open &#8594;</button>
+                        <button class="btn btn-info btn-lg turned-button" id="enquiryButton" type="button" data-toggle="modal" data-target="#myModal">Free Trial Classes &#8594;</button>
                       </div>
                     </li>
                   </ul>
@@ -546,21 +546,18 @@
                         <div class="modal-header">
                             <img src="images/School-of-Global-Education-Patna-Logo.png" style="width: 80%; margin: auto;">
                             <button type="button" style="position: fixed; right: 20px;" class="close" data-dismiss="modal">&times;</button>
-                            <!-- <h4 >
-                                Contact Us
-                            </h4> -->
                         </div>
                         <div>
                           <h4 style="text-align: center; margin-top: 10px;">
-                            Enquiry Form
+                            Book Free Trial Classes
                           </h4>
                         </div>
                         <div class="modal-body">
                             <form role="form" method="post" id="reused_form" >
-                                <p style="margin-bottom: 20px; padding: 0 15px; text-align: center; font-weight: bold;"> Admission Open for Nursery to Grade VIII </p>
+                                <p style="margin-bottom: 20px; padding: 0 15px; text-align: center; font-weight: bold;">Learn from expert teachers in 7 days online trail classes</p>
                                 <div class="row" style="margin: 0 !important">
                                   <div class="form-group col-lg-6">
-                                      <label for="name"> Name:</label>
+                                      <label for="name"> Student's Name:</label>
                                       <input type="text" class="form-control" id="name" name="Name" required maxlength="50">
                                   </div>
                                   <div class="form-group col-lg-6">
@@ -572,7 +569,7 @@
                                       <input type="email" class="form-control" id="email" name="Email" required maxlength="50">
                                   </div>
                                   <div class="form-group col-lg-6">
-                                      <label for="name"> Admission in:</label>
+                                      <label for="name"> Grade:</label>
                                       <select class="form-control" name="Class" required maxlength="50">
                                         <option value="Nur">Nursery</option>
                                         <option value="LKG">LKG</option>
@@ -587,15 +584,9 @@
                                         <option value="Grade 8">Grade 8</option>
                                       </select>
                                   </div>
-                                  <div class="form-group col-lg-12">
-                                      <label for="name"> Message:</label>
-                                      <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
-                                  </div>
                                 </div>
-                                <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Post It! &rarr;</button>
+                                <button type="submit" class="btn btn-lg btn-success btn-block" id="btnContactUs">Schedule Free Classes! &rarr;</button>
                             </form>
-                            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
-                            <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
                         </div>
                     </div>
                 </div>
@@ -622,5 +613,6 @@
     <!-- Javascript-->
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/formData.js"></script>
   </body>
 </html>
