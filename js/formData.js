@@ -32,7 +32,7 @@ $( document ).ready(function( $ ) {
 			// log a message to the console
 			$('#result').html('<a href="https://docs.google.com/spreadsheets/d/1wB58j0ahcBC-LW4mlDx20aCMhPS6zyMPGJWzBTVEmF4/edit?usp=sharing" target="_blank">Success - see Google Sheet</a>');
 			console.log("Hooray, it worked!");
-			alert("Submitted! We will contact you soon. For urgent queries call +91 933 446 9140");
+			alert("Submitted! We will contact you soon. For urgent queries call +91 799 243 4053");
 		});
 	
 		// callback handler that will be called on failure
